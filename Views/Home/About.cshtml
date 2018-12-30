@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+@Scripts.Render("~/Scripts/components/about.js")
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+<div ng-app="About">
+    <div ng-controller="AboutController">
+        <input ng-model="name" ng-keyup="NameChange()">
+        <h1>{{greeting}}</h1>
+        <h2>{{name}}</h2>
+    </div>
+</div>
+
+
+
+
+
+
